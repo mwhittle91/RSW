@@ -1,0 +1,97 @@
+<!DOCTYPE>
+<HTML>
+   <HEAD>
+      <TITLE>
+         Road Safety Week 2015: Drive less, live more
+      </TITLE>
+	  
+	<!-- Link to the map style sheet -->
+	<LINK REL="stylesheet" HREF="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+	<!-- Link to the Leaflet javascript file -->
+	<SCRIPT SRC="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js" TYPE="text/javascript"></SCRIPT>
+	
+	 <!-- leaflet javascript to enbed -->
+	<script type="text/javascript" src="leafletembed.js"></script>
+	
+	<!-- Link to the web page style sheet -->
+	<LINK REL="stylesheet" HREF="page_css.css" />
+	
+	<script type="text/javascript" src="leafletGeoJson.js"></script>
+	
+	<SCRIPT LANGUAGE="javascript" TYPE="text/javascript" SRC="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></SCRIPT>
+
+   </HEAD>
+<BODY ONLOAD = "initmap()">
+
+<!-- Header area of the web page, contains a cartoon of a tornado and the title -->
+	<DIV CLASS="title" ID="header">
+	
+		<!-- Heading tag -->
+		<H1>
+			<!-- Title of the webpage -->
+			<P>Road Safety Week 2015: Drive less, live more</P>
+		</H1>
+	</DIV>
+	
+	<DIV ID="section">
+	<!-- The map -->
+	<DIV ID="map"></DIV>
+	</DIV>
+	<!-- Navigation area of the web page, contains introduction and instructions, search functions and an image -->
+	<DIV ID="nav">
+
+	<P><B><U>Instructions</B></U></P>
+	Click on each category to see the extent of driving, and its impact, in your local authority
+	</BR>
+	<SELECT ID="ID">
+	<OPTION VALUE="">Select Local Authority </OPTION>
+	</SELECT>
+	<BUTTON ID="search" ONCLICK="search()">Search</BUTTON><BR>
+	<form action="">
+	<input type="radio" name="brake" id ="brake" value="emission" onclick="drawEmissions()">CO2 emmissions<br>
+	<input type="radio" name="brake" id ="brake" value="Drive"    onclick="drawDriving()">% Drive to work<br>
+	<input type="radio" name="brake" id ="brake" value="Cycle"    onclick="drawCycling()">% Cycle to work<br>
+	<input type="radio" name="brake" id ="brake" value="Inactive" onclick="drawInactive()">% Inactive<br>
+	<input type="radio" name="brake" id ="brake" value="Deaths"  onclick= "drawDeath()">Number of deaths due to poor air quality<br>
+	</form>
+	<BR>
+	<B><U>CO2 emissions</B></U></BR>
+	UK total: 454.1 million tonnes</BR></BR>
+	<B><U>% drive to work</B></U></BR>
+	England and Wales: 35%</BR>
+	Scotland (in employment) : 56%</BR></BR>
+	<B><U>% cycle to work</B></U></BR>
+	England and Wales: 1.8% </BR>
+	Scotland (in employment): 1.4%</BR></BR>
+	<B><U>% Inactive (less than 150 minutes exercise per week)</B></U></BR>
+	England: 27.7% </BR></BR>
+	<B><U>Additional deaths due to particulate air pollution</B></U></BR>
+	UK total: 28,969</BR>
+	</BR>
+	
+	<P><B><U> More Info </P></B></U>
+	More information can be found at <a title="Road Safety Week" href="to www.roadsafetyweek.org.uk/">Road Safety Week</a>.</BR>
+	For a reference of the figures used in this map please visit <a title="Road Safety Week" href="to www.roadsafetyweek.org.uk/notesandsources">Road Safety Week notes and sources</a>.
+	</BR>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.personal.leeds.ac.uk/~gy14mw/Brake/index.html" data-text="Check out the #RoadSafetyWeek 's campaign created by @mwhittle91" data-hashtags="DriveLessLiveMore">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-share-button" data-href="http://www.personal.leeds.ac.uk/~gy14mw/Brake/index.html" data-layout="button_count"></div>
+</BR>
+
+	Map produced by <a title="Road Safety Week" href="http://www.its.leeds.ac.uk/people/m.whittle">Matthew Whittle</a>.</BR>
+	<a href="https://twitter.com/mwhittle91" class="twitter-follow-button" data-show-count="false">Follow @mwhittle91</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	
+	
+	</DIV>
+</BODY>
+</HTML>

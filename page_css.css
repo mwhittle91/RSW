@@ -1,0 +1,130 @@
+*{
+	padding: 0px;
+	margin:0px;
+}
+
+a {
+    color: white;
+}
+#header {
+	position: absolute;
+    background-color:black;
+    color:white;
+    text-align:left;
+    Font-family : Arial;
+    Font-Size : 1em;
+	height: 7%;
+	width:70%;
+	z-index:9999;
+	opacity:0.6;
+	padding-right: 5px;
+	padding-top: 1%;
+
+}
+
+#nav {
+	position: absolute;
+    top: 8.95%;
+    left: 0%;
+	padding-right: 5px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+    line-height:20px;
+    color: white;
+    background-color:#000;
+    width:20%;
+	height: 90.5%;
+    font-family: Arial;
+    font-Size: 0.8em;
+	z-index:9999;
+	opacity: 0.6;
+}
+
+#map { 
+		position: relative;
+	    height:100%; 
+		width: 100%;
+		z-index: 0
+		}
+
+
+
+
+
+#image {
+
+	position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+
+
+#info{ 
+	position: relative;
+	top: 20%;
+	width: 300px;
+	height: 400px;
+	}
+	
+
+
+.info {
+	position: relative;
+	top: 20%;
+    padding: 6px 8px;
+    font:  Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+	
+	
+}
+
+.info h1 {
+
+    margin: 0 0 20px;
+	padding: 10px 10px;
+    color: #779;
+	font-size: 3em
+
+}
+
+.info h3 {
+
+    margin: 0 0 20px;
+	padding: 10px 10px;
+    color: #779;
+	font-size: 1.5em
+
+}
+
+
+.info h4 {
+    margin: 0 0 10px;
+    color: #777;
+	font-size: 1.5em;
+	
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+
+
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
