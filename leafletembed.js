@@ -951,7 +951,7 @@ legend.onAdd = function (map) {
 
 legend.addTo(map);
 
- geojsonLayer = new L.GeoJSON.AJAX("geoJson.geojson", {
+ geojsonLayer = new L.GeoJSON.AJAX("map.geojson", {
     style: style,
     onEachFeature: onEachFeature
 }).addTo(map);
