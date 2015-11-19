@@ -98,7 +98,7 @@ info.update = function (props) {
         '<b><h1>' + props.ZONE_LABEL + '</h1></b>'
         : '-') +
 	
-	'<h4>CO2 emmisson</h4>' +  (props ?
+	'<h4>CO2  emissions</h4>' +  (props ?
         '<h3><b>' + props.data_CO2 + ' tonnes</h3></b>'
         : '-') +
 		
@@ -364,7 +364,7 @@ info.update = function (props) {
         '<b><h1>' + props.ZONE_LABEL + '</h1></b>'
         : '-') +
 	
-	'<h4>CO2 emmisson</h4>' +  (props ?
+	'<h4>CO2  emissions</h4>' +  (props ?
         '<h3><b>' + props.data_CO2 + ' tonnes</h3></b>'
         : '-') +
 		
@@ -501,7 +501,7 @@ info.update = function (props) {
         '<b><h1>' + props.ZONE_LABEL + '</h1></b>'
         : '-') +
 	
-	'<h4>CO2 emmisson</h4>' +  (props ?
+	'<h4>CO2  emissions</h4>' +  (props ?
         '<h3><b>' + props.data_CO2 + ' tonnes</h3></b>'
         : '-') +
 		
@@ -636,7 +636,7 @@ info.update = function (props) {
         '<b><h1>' + props.ZONE_LABEL + '</h1></b>'
         : '-') +
 	
-	'<h4>CO2 emmisson</h4>' +  (props ?
+	'<h4>CO2  emissions</h4>' +  (props ?
         '<h3><b>' + props.data_CO2 + ' tonnes</h3></b>'
         : '-') +
 		
@@ -770,7 +770,7 @@ info.update = function (props) {
         '<b><h1>' + props.ZONE_LABEL + '</h1></b>'
         : '-') +
 	
-	'<h4>CO2 emmisson</h4>' +  (props ?
+	'<h4>CO2  emissions</h4>' +  (props ?
         '<h3><b>' + props.data_CO2 + ' tonnes</h3></b>'
         : '-') +
 		
@@ -904,7 +904,7 @@ info.update = function (props) {
         '<b><h1>' + props.ZONE_LABEL + '</h1></b>'
         : '-') +
 	
-	'<h4>CO2 emmisson</h4>' +  (props ?
+	'<h4>CO2  emissions</h4>' +  (props ?
         '<h3><b>' + props.data_CO2 + ' tonnes</h3></b>'
         : '-') +
 		
